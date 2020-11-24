@@ -35,8 +35,8 @@ x=0
 y=0
 
 while True:
-    main =pygame.display.set_mode((x_main, y_main))
-    main.fill(WHITE)
+    main =pygame.display.set_mode((x_main, y_main), pygame.FULLSCREEN)
+    main.fill(BLACK)
 
     blit_background(x,y, 6000, 4000, RED, "gradientbg.jpeg")
     blit_button(240, 250, 30, 30, RED, "wood.jpg")
