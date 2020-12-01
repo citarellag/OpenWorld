@@ -12,17 +12,16 @@ BLUE = (0, 0, 255)
 pygame.init() 
 mixer.init()
 #creo lo schermo e il clock
-x_main=480
-y_main=533
+x_main=640
+y_main=640
 
 clock = pygame.time.Clock()
-FPS = 120
- 
+FPS = 60
 
 
 def blit_background(pos_x, pos_y, dim_x, dim_y, color, image_def):
     button=pygame.Rect(pos_x, pos_y, dim_x, dim_y)
-    image = pygame.image.load('IMAGESOW/gradientbg.jpeg')
+    image = pygame.image.load('IMAGESOW/provona.png')
     image= pygame.transform.scale(image, (dim_x,dim_y)) 
     main.blit(image, button)
 
@@ -37,9 +36,10 @@ y=0
 while True:
     main =pygame.display.set_mode((x_main, y_main))
     main.fill(BLACK)
+    pygame.display.set_caption("Open World")
 
-    blit_background(x,y, 6000, 4000, RED, "gradientbg.jpeg")
-    blit_button(240, 250, 30, 30, RED, "wood.jpg")
+    blit_background(x,y, 3500, 3500, RED, "provona.png")
+    blit_button(288, 288, 32, 32, RED, "wood.jpg")
 
     clock.tick(FPS)
     for event in pygame.event.get():
@@ -49,13 +49,13 @@ while True:
         if keys [pygame.K_ESCAPE]:
             quit()
         if keys[pygame.K_LEFT]: 
-                x+=10
+                x+=32
         if keys[pygame.K_RIGHT]:
-                x-=10
+                x-=32
         if keys[pygame.K_UP]:
-                y+=10
+                y+=32
         if keys[pygame.K_DOWN]:
-                y-=10
+                y-=32
 
 
 
