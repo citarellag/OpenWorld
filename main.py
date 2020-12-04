@@ -49,14 +49,13 @@ while True:
         if keys [pygame.K_ESCAPE]:
             quit()
         if keys[pygame.K_LEFT]: 
-                x+=32
+                x+=15
         if keys[pygame.K_RIGHT]:
-                x-=32
+                x-=15
         if keys[pygame.K_UP]:
-                y+=32
+                y+=15
         if keys[pygame.K_DOWN]:
-                y-=32
+                y-=15
 
-
-
+    print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))
     pygame.display.update()
