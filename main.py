@@ -57,5 +57,5 @@ while True:
         if keys[pygame.K_DOWN]:
                 y-=15
 
-    print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))
+    #print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))
     pygame.display.update()
