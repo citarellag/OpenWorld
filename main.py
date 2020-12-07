@@ -45,7 +45,7 @@ while True:
         if keys[pygame.K_DOWN]:
                 spostamento_y-=3
                 y_blocco+=3
-    block = pygame.Rect(x_blocco, y_blocco, 32, 32)
+    block = pygame.Rect(x_blocco, y_blocco, 24, 24)
     #print("x e y blocco:", x_blocco,y_blocco, "x e t spost", spostamento_x, spostamento_y)
     display.fill(BLACK)
     layer_index = 0
@@ -61,10 +61,10 @@ while True:
             if layer.name == "hit block":
                 for obj in layer:
                     if pygame.Rect(obj.x, obj.y, obj.width, obj.height).colliderect(block) == True:
-                        print ("YOU HIT THE RED BLOCK!!")
+                        print ("YOU ARE NIGGA!!")
                         break
     
-    a=blit_button(288, 288, 32, 32, RED, "wood.jpg")
+    a=blit_button(288, 288, 24, 24, RED, "wood.jpg")
     #print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))
 
     pygame.display.update()
