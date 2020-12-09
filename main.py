@@ -12,6 +12,7 @@ gameMap = pytmx.load_pygame("Tiles\provona.tmx")
 FPS=60
 spostamento_x=0
 spostamento_y=0
+var_spost = 3
 x_blocco=288
 y_blocco=288
 
@@ -34,17 +35,17 @@ while True:
         if keys [pygame.K_ESCAPE]:
             quit()
         if keys[pygame.K_LEFT]: 
-                spostamento_x+=3
-                x_blocco-=3
+                spostamento_x+=var_spost
+                x_blocco-=var_spost
         if keys[pygame.K_RIGHT]:
-                spostamento_x-=3
-                x_blocco+=3
+                spostamento_x-=var_spost
+                x_blocco+=var_spost
         if keys[pygame.K_UP]:
-                spostamento_y+=3
-                y_blocco-=3
+                spostamento_y+=var_spost
+                y_blocco-=var_spost
         if keys[pygame.K_DOWN]:
-                spostamento_y-=3
-                y_blocco+=3
+                spostamento_y-=var_spost
+                y_blocco+=var_spost
     block = pygame.Rect(x_blocco, y_blocco, 24, 24)
     #print("x e y blocco:", x_blocco,y_blocco, "x e t spost", spostamento_x, spostamento_y)
     display.fill(BLACK)
