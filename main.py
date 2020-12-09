@@ -61,7 +61,7 @@ while True:
             if layer.name == "hit block":
                 for obj in layer:
                     if pygame.Rect(obj.x, obj.y, obj.width, obj.height).colliderect(block) == True:
-                        print ("GIA LO SAI!!")
+                        print("HITBOX!\nESCI!")
                         break
     
     a=blit_button(288, 288, 24, 24, RED, "wood.jpg")
