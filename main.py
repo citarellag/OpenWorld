@@ -76,13 +76,14 @@ while True:
                     if pygame.Rect(obj.x, obj.y, obj.width, obj.height).colliderect(block) == True:
                         if obj.x>x_blocco:
                             controllo_dx=1
-                        elif obj.x<x_blocco:
+                        elif (obj.x+obj.width-4)<x_blocco:
                             controllo_sx=1
                         if obj.y>y_blocco:
                             controllo_down=1
-                        elif obj.y<y_blocco:
+                        elif (obj.y+obj.height-4)<y_blocco:
                             controllo_up=1
-
+                    
+    
     
     a=blit_button(288, 288, 24, 24, RED, "wood.jpg")
     #print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))

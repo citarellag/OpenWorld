@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="64" height="62" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="53">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="64" height="62" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="61">
  <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32" tilecount="100" columns="10">
   <image source="../IMAGESOW/grass.png" width="320" height="320"/>
  </tileset>
@@ -84,13 +84,12 @@
   <object id="35" x="1326" y="263.833" width="547.333" height="231.5"/>
   <object id="36" x="1869" y="296" width="100" height="130.667"/>
   <object id="37" x="1868" y="428" width="72" height="68.3333"/>
-  <object id="38" x="1420.67" y="490.667" width="387.75" height="71.3333"/>
-  <object id="39" x="1646" y="556.667" width="161.667" height="36"/>
+  <object id="38" x="1422.67" y="490.667" width="385.75" height="69.8333"/>
+  <object id="39" x="1646" y="556.667" width="161.667" height="33.5"/>
   <object id="40" x="1460.42" y="229.334" width="412.243" height="48.6666"/>
   <object id="41" x="1519" y="169.333" width="192.833" height="72"/>
   <object id="42" x="1709" y="201.955" width="162" height="42.0455"/>
-  <object id="43" x="1614.67" y="710.667" width="162.333" height="169.667"/>
-  <object id="44" x="1775" y="712.666" width="131" height="104"/>
+  <object id="44" x="1775" y="712.666" width="131" height="102"/>
   <object id="45" x="1651.33" y="681" width="121" height="36.6666"/>
   <object id="46" x="627" y="32" width="794" height="31.75"/>
   <object id="47" x="799" y="62" width="193" height="66"/>
@@ -99,5 +98,6 @@
   <object id="50" x="1279" y="32" width="145.667" height="79"/>
   <object id="51" x="156.622" y="861.333" width="293.424" height="100.394"/>
   <object id="52" x="957.75" y="926.409" width="132.023" height="131.341"/>
+  <object id="60" x="1613" y="713.5" width="164" height="168.5"/>
  </objectgroup>
 </map>
