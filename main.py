@@ -6,7 +6,7 @@ pygame.init()
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
-display = pygame.display.set_mode((600,400))
+display = pygame.display.set_mode((600,600))
 clock = pygame.time.Clock()
 gameMap = pytmx.load_pygame("Tiles\provona.tmx")
 FPS=60
@@ -29,7 +29,7 @@ controllo_dx=0
 controllo_sx=0
 
 while True:
-    display = pygame.display.set_mode((600,400))
+    display = pygame.display.set_mode((600,600))
     clock.tick(FPS)
     
     for event in pygame.event.get():
