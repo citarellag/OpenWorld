@@ -10,11 +10,11 @@ display = pygame.display.set_mode((600,600))
 clock = pygame.time.Clock()
 gameMap = pytmx.load_pygame("Tiles\provona.tmx")
 FPS=60
-spostamento_x=0
-spostamento_y=0
+spostamento_x=-725
+spostamento_y=-850
 var_spost = 3
-x_blocco=288
-y_blocco=288
+x_blocco=1013
+y_blocco=1138
 
 def blit_button(pos_x, pos_y, dim_x, dim_y, color, image_def):
     button=pygame.Rect(pos_x, pos_y, dim_x, dim_y)
@@ -87,5 +87,4 @@ while True:
     
     a=blit_button(288, 288, 24, 24, RED, "wood.jpg")
     #print ('tick={}, fps={}'.format(clock.tick(FPS), clock.get_fps()))
-
     pygame.display.update()
